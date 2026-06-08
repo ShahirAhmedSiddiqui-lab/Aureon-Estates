@@ -340,8 +340,10 @@ export default function App() {
           {/* Logo Section */}
           <a href="#" className="flex items-center gap-2 group">
             <span className="w-8 h-8 rounded-full bg-white text-neutral-950 flex items-center justify-center font-serif font-black text-lg shadow-md transition-transform group-hover:rotate-12 duration-300">A</span>
-            <span className="font-serif font-semibold text-lg md:text-xl tracking-widest text-white uppercase">AUREON Estates</span>
+            <span className="font-serif font-semibold text-lg md:text-xl tracking-widest text-white uppercase">AUREON</span>
+            <span className="font-serif font-semibold text-lg md:text-xl tracking-widest text-white uppercase">Estates</span>
           </a>
+
 
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 bg-black/20 p-1 rounded-full border border-white/5">
