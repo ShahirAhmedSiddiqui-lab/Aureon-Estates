@@ -322,7 +322,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Header Area With Majestic Backdrop */}
-      <section className="relative w-full min-h-screen flex flex-col justify-between text-white p-4 md:p-8 overflow-hidden bg-neutral-950">
+      <section className="relative w-full min-h-screen flex flex-col justify-between text-white p-3 md:p-6 overflow-hidden bg-neutral-950">
         
         {/* Background Image with Elegant Dark Overlays */}
         <div className="absolute inset-0 z-0">
@@ -336,29 +336,29 @@ export default function App() {
         </div>
 
         {/* --- NAVIGATION LAYER (Sticky-Vibe Overlay) --- */}
-        <header className="relative z-20 w-full flex items-center justify-between py-4 px-3 md:px-6 bg-white/10 backdrop-blur-md rounded-full border border-white/10 max-w-7xl mx-auto" id="main-navigation">
+        <header className="relative z-20 w-full flex items-center justify-between py-2.5 px-3 md:px-4 bg-white/10 backdrop-blur-md rounded-full border border-white/10 max-w-5xl mx-auto" id="main-navigation">
           {/* Logo Section */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className="w-8 h-8 rounded-full bg-white text-neutral-950 flex items-center justify-center font-serif font-black text-lg shadow-md transition-transform group-hover:rotate-12 duration-300">A</span>
-            <span className="font-serif font-semibold text-lg md:text-xl tracking-widest text-white uppercase">AUREON</span>
-            <span className="font-serif font-semibold text-lg md:text-xl tracking-widest text-white uppercase">Estates</span>
+          <a href="#" className="flex items-center gap-1.5 group">
+            <span className="w-6 h-6 rounded-full bg-white text-neutral-950 flex items-center justify-center font-serif font-black text-sm shadow-md transition-transform group-hover:rotate-12 duration-300">A</span>
+            <span className="font-serif font-semibold text-sm md:text-base tracking-[0.14em] text-white uppercase">AUREON</span>
+            <span className="font-serif font-semibold text-sm md:text-base tracking-[0.14em] text-white uppercase">Estates</span>
           </a>
 
 
           {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 bg-black/20 p-1 rounded-full border border-white/5">
-            <a href="#" className="px-4 py-2 text-xs md:text-xs font-medium uppercase tracking-wider rounded-full bg-white text-neutral-950 transition-all">Home</a>
-            <a href="#agents" className="px-4 py-2 text-xs md:text-xs font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">Agents</a>
-            <a href="#simulator" className="px-4 py-2 text-xs md:text-xs font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
+            <a href="#" className="px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider rounded-full bg-white text-neutral-950 transition-all">Home</a>
+            <a href="#agents" className="px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">Agents</a>
+            <a href="#simulator" className="px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               Live Demo
             </a>
-            <a href="#properties" className="px-4 py-2 text-xs md:text-xs font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">Properties</a>
-            <a href="#inquire" className="px-4 py-2 text-xs md:text-xs font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">About Us</a>
+            <a href="#properties" className="px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">Properties</a>
+            <a href="#inquire" className="px-3 py-1.5 text-[10px] font-medium uppercase tracking-wider rounded-full text-white/85 hover:text-white hover:bg-white/10 transition-all">About Us</a>
           </nav>
 
           {/* Interactive Right Contact Control */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             {/* Quick Inquiry Logs button */}
             {inquiries.length > 0 && (
               <button 
@@ -374,10 +374,10 @@ export default function App() {
 
             <a 
               href="tel:+623192461011" 
-              className="px-4 py-2 text-xs md:text-sm font-semibold tracking-wide rounded-full border border-white/30 bg-white/5 backdrop-blur hover:bg-white hover:text-neutral-950 transition-all duration-300 flex items-center gap-2 shadow-lg"
+              className="px-3 py-1.5 text-[10px] md:text-[11px] font-semibold tracking-wide rounded-full border border-white/30 bg-white/5 backdrop-blur hover:bg-white hover:text-neutral-950 transition-all duration-300 flex items-center gap-1.5 shadow-lg"
               id="header-phone-badge"
             >
-              <Phone className="w-3.5 h-3.5" />
+              <Phone className="w-3 h-3" />
               <span className="hidden sm:inline">+62 3192461011</span>
               <span className="sm:hidden">Call</span>
             </a>
@@ -385,10 +385,10 @@ export default function App() {
         </header>
 
         {/* --- MAIN HERO BODY (Center Lettering and Badges) --- */}
-        <div className="relative z-10 my-auto flex flex-col items-center justify-center text-center max-w-5xl mx-auto w-full pt-16 pb-12">
+        <div className="relative z-10 my-auto flex flex-col items-center justify-center text-center max-w-5xl mx-auto w-full pt-8 pb-10">
           
           {/* Majestic Hero Headline Name - Overlap Display style */}
-          <div className="relative my-4 select-none">
+          <div className="relative my-2 select-none">
             <motion.h1 
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -404,7 +404,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-xs sm:text-sm md:text-lg text-white/80 max-w-2xl font-light leading-relaxed mt-2 tracking-wide font-display"
+            className="text-xs sm:text-sm md:text-lg text-white/80 max-w-2xl font-light leading-relaxed mt-1 tracking-wide font-display"
           >
             Autonomous cliffside retreats. Seamless atmospheric climate loops. Ultra-luxurious biophilic living structures designed for the future.
           </motion.p>
@@ -414,7 +414,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-8"
+            className="mt-6"
           >
             <a 
               href="#properties"
